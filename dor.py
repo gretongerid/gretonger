@@ -45,12 +45,11 @@ def slowprint(s):
 def main_menu():
        clear()
        slowprint(W + '#'*45)
-       slowprint(W + '     -== '+gt+'Menu Termos Kumpul4semut'+W+' ==-')
+       slowprint(W + '     -== '+gt+'Menu PAKET GRETONGER TECH'+W+' ==-')
        slowprint(W + '#'*45)
        print(W + '# ' + str(time.strftime('%a, %d %B %Y')))
        print(W + '# Provider gsm Operator ' + C + str(os.popen('getprop gsm.operator.alpha').read().split('\n')[0]))
-       print(W + '# Python ' + C + str(pv) + W + ', ' + C + str(os.popen('getprop ro.product.device').read().split('\n')[0]) + ' ' + str(os.popen('getprop ro.build.version.release').read().split('\n')[0]) + ' Build SDK ' + str(os.popen('getprop ro.build.version.sdk').read().split('\n')[0]))
-       print(W + '#'*45)
+       
        
        
        slowprint (gt+"Menu Pilihan:")
@@ -105,5 +104,5 @@ menu_actions = {
 }
 
 
-if __name__ == "__main__":
+ if __name__ == "__main__":
     main_menu()
