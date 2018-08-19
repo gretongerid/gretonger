@@ -23,6 +23,6 @@ $ git clone https://github.com/gretongerid/gretonger.git
 ## Usage
 
 ```sh
-$ cd xl-py
+$ cd xlotp
 $ python app.py
 ```
