@@ -176,7 +176,7 @@ def menu_4():
 
 def menu_3():
      lodprint(l)
-     os.system('cd ..;python GT.py')
+     os.system('cd ..;python app.py')
 
 
 def exit():
