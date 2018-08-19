@@ -24,5 +24,5 @@ $ git clone https://github.com/gretongerid/gretonger.git
 
 ```sh
 $ cd gretonger
-$ python GT.py
+$ python dor.py
 ```
