@@ -104,5 +104,13 @@ menu_actions = {
 }
 
 
- if __name__ == "__main__":
+menu_actions = {
+    "main" : main_menu,
+    "1" : menu_1,
+    "2" : menu_2,
+    "0" : exit
+}
+
+
+if __name__ == "__main__":
     main_menu()
