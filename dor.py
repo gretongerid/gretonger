@@ -1,6 +1,10 @@
-import os, sys, time, subprocess, socket, select, threading
-from platform import python_version
-pv = python_version()
+# -*- coding: utf-8 -*-
+import os
+import sys
+import platform
+import time
+from xlpy import *
+import base64
 
 g = "\033[32;1m"
 gt = "\033[0;32m"
@@ -25,24 +29,8 @@ C = '\x1b[36m'
 GR = '\x1b[37m'
 
 
-   
 
-try:
-    import platform
-    from xlpy import *
-except Exception as err:
-    os.system('pip install --upgrade pip')
-    os.system('pkg install php')
-    os.system('pip install requests')
-    os.system('pip install -r requirements.txt')
-    os.system('python dor.py')()
-except KeyboardInterrupt:
-	  print (m+"[" + p + "Fail To Import" + m + "]")
-	  sys.exit()
-
-
-       
-def slowaprint(s):
+def slowprints(s):
     for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
